@@ -1,0 +1,54 @@
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.admin-layout {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.admin-content {
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  margin-left: 240px;
+  background: #f8fafc;
+}
+
+@media (max-width: 800px) {
+  .admin-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}

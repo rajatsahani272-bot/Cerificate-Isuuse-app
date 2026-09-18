@@ -1,0 +1,195 @@
+.certificate-page {
+  min-height: calc(100vh - 145px);
+  padding: 45px 20px 70px;
+  background: #f8fafc;
+}
+
+.certificate-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.05);
+}
+
+.certificate-container > svg {
+  color: #4f46e5;
+}
+
+.certificate-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.certificate-header span,
+.certificate-id span {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.certificate-header h1 {
+  margin: 5px 0 0;
+  color: #0f172a;
+  font-size: 27px;
+}
+
+.certificate-header p {
+  margin: 5px 0 0;
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.certificate-id {
+  text-align: right;
+}
+
+.certificate-id strong {
+  display: block;
+  margin-top: 5px;
+  color: #334155;
+  font-size: 12px;
+}
+
+.certificate-preview {
+  width: 100%;
+  height: 600px;
+  margin-top: 28px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.certificate-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.certificate-details {
+  margin-top: 22px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.certificate-details span {
+  display: block;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.certificate-details strong {
+  display: block;
+  margin-top: 5px;
+  color: #0f172a;
+  font-size: 12px;
+}
+
+.certificate-actions {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.download-certificate,
+.view-certificate,
+.certificate-back-button {
+  height: 40px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-certificate {
+  border: none;
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.download-certificate:hover {
+  background: #4338ca;
+}
+
+.view-certificate {
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #475569;
+}
+
+.view-certificate:hover {
+  background: #f8fafc;
+}
+
+.certificate-back-button {
+  margin-top: 22px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #475569;
+}
+
+@media (max-width: 800px) {
+  .certificate-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certificate-preview {
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .certificate-page {
+    padding: 30px 15px 50px;
+  }
+
+  .certificate-container {
+    padding: 22px;
+  }
+
+  .certificate-header {
+    flex-direction: column;
+  }
+
+  .certificate-id {
+    text-align: left;
+  }
+
+  .certificate-preview {
+    height: 400px;
+  }
+
+  .certificate-details {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-actions {
+    flex-direction: column;
+  }
+
+  .download-certificate,
+  .view-certificate {
+    width: 100%;
+  }
+}
